@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Silkscreen:wght@400;700&display=swap');
 
+:root {
+    --color-one: #60B0F0;
+    --color-two: #F5FA37;
+    --color-three: #F06560;
+}
+
 body {
     font-family: "Architects Daughter", cursive;
+    background-image: linear-gradient(to right, var(--color-one), var(--color-two), var(--color-three));
 }
 
 h1, h2, h3, h4 {
