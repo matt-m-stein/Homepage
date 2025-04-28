@@ -1,16 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Silkscreen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Silkscreen:wght@400;700&display=swap");
 
 :root {
-    --color-one: #60B0F0;
-    --color-two: #F5FA37;
-    --color-three: #F06560;
+  --color-one: #60b0f0;
+  --color-two: #f5fa37;
+  --color-three: #f06560;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Architects Daughter", cursive;
-    background-image: linear-gradient(to right, var(--color-one), var(--color-two), var(--color-three));
+  font-family: "Architects Daughter", cursive;
+  background-image: linear-gradient(
+    to right,
+    var(--color-one),
+    var(--color-two),
+    var(--color-three)
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
 }
 
-h1, h2, h3, h4 {
-    font-family: "Silkscreen", sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Silkscreen", sans-serif;
+}
+
+.container {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 45px;
+  border-radius: 6px;
+  border: 2px solid white;
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4);
+  margin: 2.5rem;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  object-fit: cover;
+}
+
+h1 {
+  color: var(--color-one);
+}
+
+h2 {
+  color: var(--color-two);
+}
+
+p {
+  color: white;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-one);
+  font-size: 1.75rem;
+  transition: color 0.5s, font-size 0.5s 0.25s;
+}
+
+a:hover {
+  color: var(--color-three);
+  font-size: 2rem;
+}
+
+address {
+  color: var(--color-three);
+  font-size: 1.6rem;
+  font-family: "Silkscreen", sans-serif;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    width: 90%;
+  }
 }
