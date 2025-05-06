@@ -150,6 +150,18 @@ address {
   }
 }
 
+@media (max-width: 800px) {
+  .pic-and-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    width: fit-content;
+  }
+}
+
 @media (max-width: 650px) {
   html {
     font-size: 75%;
