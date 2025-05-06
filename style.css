@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   height: fit-content;
+  min-height: 100vh;
 }
 
 h1,
@@ -32,6 +33,13 @@ h2,
 h3,
 h4 {
   font-family: "Silkscreen", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -47,25 +55,38 @@ h4 {
 img.profile-image {
   border-radius: 50%;
   border: 2px solid white;
-  width: 150px;
-  height: 150px;
+  width: 17.5rem;
+  height: 17.5rem;
   margin: 15px;
   object-fit: cover;
 }
 
+.pic-and-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 h1 {
   color: var(--color-one);
-  font-size: 5rem;
+  font-size: 4.25rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 h2 {
   color: var(--color-two);
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 h3 {
   color: var(--color-three);
   font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -73,6 +94,14 @@ p {
   font-size: 1.3rem;
   margin: 1rem 0;
   text-align: justify;
+}
+
+ul {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5rem;
+  border-radius: 1.5rem;
+  margin: 2rem 0;
+  border: 2px solid #fff;
 }
 
 li {
@@ -118,5 +147,42 @@ address {
 @media (max-width: 1050px) {
   .container {
     width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 75%;
+  }
+
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    width: 99%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  a {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
   }
 }
